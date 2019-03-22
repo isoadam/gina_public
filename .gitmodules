@@ -1,0 +1,3 @@
+[submodule "vendor/processhacker"]
+	path = vendor/processhacker
+	url = git@github.com:processhacker/processhacker.git

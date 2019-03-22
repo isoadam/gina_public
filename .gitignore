@@ -1,0 +1,11 @@
+# build
+/bin
+
+# visual studio
+/.vs
+*.VC.db
+*.VC.opendb
+
+# misc
+.vscode/
+.DS_Store
