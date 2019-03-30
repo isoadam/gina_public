@@ -76,7 +76,7 @@ NTSTATUS initialise()
   // create hook
   memcpy(discardable_section, jmp_buffer, sizeof(jmp_buffer));
   *reinterpret_cast<void**>(&reinterpret_cast<unsigned char*>(discardable_section)[2]) = &device_control;
-c
+
   // replace dispatch function
   null_original_irp_device_control = null_driver_object->MajorFunction[IRP_MJ_DEVICE_CONTROL];
   null_driver_object->MajorFunction[IRP_MJ_DEVICE_CONTROL] = reinterpret_cast<DRIVER_DISPATCH*>(discardable_section);
